@@ -8,10 +8,17 @@ const correctAnswers = {
   'q-1': 'c',
   'q-2': 'b',
   'q-3': 'c',
+  'q-4': 'c',
+  'q-5': 'a',
+  'q-6': 'b',
+  'q-7': 'a',
+  'q-8': 'a',
+  'q-9': 'a',
 };
 
 function outputScore(score) {
-  outputEl.innerText = `Your score is ${score}!`;
+  if (score === 10) outputEl.innerText = 'You scored full marks!!';
+  else outputEl.innerText = `Your score is ${score}!`;
 }
 
 // Event handler
