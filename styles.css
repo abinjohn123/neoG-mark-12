@@ -25,10 +25,16 @@ body {
   display: none;
 }
 
-#output {
+#output,
+#formula-dislay {
   background-color: #fff;
   min-height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#formula-dislay {
+  font-weight: 600;
+  font-size: 1.2rem;
 }

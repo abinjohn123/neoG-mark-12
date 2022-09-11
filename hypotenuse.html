@@ -18,13 +18,13 @@
       <nav>
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link text-white active" href="#">Triangle?</a>
+            <a class="nav-link text-white" href="index.html">Triangle?</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="quiz.html">Quiz</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="hypotenuse.html">Hypotenuse</a>
+            <a class="nav-link text-white active" href="#">Hypotenuse</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Area</a>
@@ -37,38 +37,36 @@
       style="max-width: 30rem"
     >
       <div class="header mb-5 text-center">
-        <h1 class="mb-0">Is it a triangle?</h1>
+        <h1 class="mb-0">Hypotenuse Calculator</h1>
         <p class="mb-0">
-          Enter three angles and check if they make up a triangle
+          Enter length of two sides to calculate the third side
         </p>
       </div>
+      <p class="p-3 text-center rounded border bg-warning" id="formula-dislay">
+        Hypotenuse = sqrt(a<sup>2</sup> + b<sup>2</sup>)
+      </p>
       <form class="mb-3" id="triangle-form">
         <div class="mb-3">
-          <label for="angle-0" class="form-label">Angle 1 (in degrees)</label>
-          <input type="number" class="form-control" id="angle-0" required />
-          <div id="alert-angle-0" class="form-text text-danger hidden">
+          <label for="side-0" class="form-label">Side <em>a</em></label>
+          <input type="number" class="form-control" id="side-0" required />
+          <div id="alert-side-0" class="form-text text-danger hidden">
             Angle must be greater than 0
           </div>
         </div>
         <div class="mb-3">
-          <label for="angle-1" class="form-label">Angle 2 (in degrees)</label>
-          <input type="number" class="form-control" id="angle-1" required />
-          <div id="alert-angle-1" class="form-text text-danger hidden">
-            Angle must be greater than 0
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="angle-2" class="form-label">Angle 3 (in degrees)</label>
-          <input type="number" class="form-control" id="angle-2" required />
-          <div id="alert-angle-2" class="form-text text-danger hidden">
+          <label for="side-1" class="form-label">Side <em>b</em></label>
+          <input type="number" class="form-control" id="side-1" required />
+          <div id="alert-side-1" class="form-text text-danger hidden">
             Angle must be greater than 0
           </div>
         </div>
         <div class="text-center">
-          <button type="submit" class="btn btn-primary px-4 py-2">Check</button>
+          <button type="submit" class="btn btn-primary px-4 py-2">
+            Calculate
+          </button>
         </div>
       </form>
-      <p class="p-3 text-center rounded border" id="output"></p>
+      <h2 class="p-3 text-center rounded border" id="output"></h2>
       <small class="text-secondary text-center d-block"
         >dabbling with bootstrap for the first time :)</small
       >
@@ -78,6 +76,6 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script src="hypotenuse.js"></script>
   </body>
 </html>
