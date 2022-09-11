@@ -34,7 +34,7 @@ function calculateHypotenuse(e) {
 
   if (!inputsValid(side0, side1)) return;
 
-  const hypotenuse = Math.sqrt(side0 ** 2 + side1 ** 2).toFixed(2);
+  const hypotenuse = Number(Math.sqrt(side0 ** 2 + side1 ** 2).toFixed(2));
   outputEl.innerText = `Hypotenuse: ${hypotenuse}`;
 }
 
