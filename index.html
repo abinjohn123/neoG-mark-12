@@ -11,8 +11,40 @@
       crossorigin="anonymous"
     />
     <title>Fun With Triangles</title>
+
+    <style>
+      body {
+        background-color: indigo;
+      }
+    </style>
   </head>
-  <body>
+  <body class="vh-100">
+    <div class="container-fluid" style="max-width: 25rem">
+      <form class="bg-light p-4">
+        <div class="mb-3">
+          <label for="angle-1" class="form-label">Angle 1 (in degrees)</label>
+          <input type="number" class="form-control" id="angle-1" />
+          <div id="alert-angle-1 hidden" class="form-text text-danger">
+            Angle must be greater than 0
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="angle-2" class="form-label">Angle 2 (in degrees)</label>
+          <input type="number" class="form-control" id="angle-2" />
+          <div id="alert-angle-1 hidden" class="form-text text-danger">
+            Angle must be greater than 0
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="angle-3" class="form-label">Angle 3 (in degrees)</label>
+          <input type="number" class="form-control" id="angle-3" />
+          <div id="alert-angle-1 hidden" class="form-text text-danger">
+            Angle must be greater than 0
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Check</button>
+      </form>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
