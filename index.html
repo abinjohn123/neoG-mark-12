@@ -16,29 +16,33 @@
       body {
         background-color: indigo;
       }
+
+      .hidden {
+        display: none;
+      }
     </style>
   </head>
   <body class="vh-100">
-    <div class="container-fluid" style="max-width: 25rem">
-      <form class="bg-light p-4">
+    <div class="container-fluid bg-light p-4" style="max-width: 25rem">
+      <form id="triangle-form">
         <div class="mb-3">
-          <label for="angle-1" class="form-label">Angle 1 (in degrees)</label>
+          <label for="angle-0" class="form-label">Angle 1 (in degrees)</label>
+          <input type="number" class="form-control" id="angle-0" />
+          <div id="alert-angle-0" class="form-text text-danger hidden">
+            Angle must be greater than 0
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="angle-1" class="form-label">Angle 2 (in degrees)</label>
           <input type="number" class="form-control" id="angle-1" />
-          <div id="alert-angle-1 hidden" class="form-text text-danger">
+          <div id="alert-angle-1" class="form-text text-danger hidden">
             Angle must be greater than 0
           </div>
         </div>
         <div class="mb-3">
-          <label for="angle-2" class="form-label">Angle 2 (in degrees)</label>
+          <label for="angle-2" class="form-label">Angle 3 (in degrees)</label>
           <input type="number" class="form-control" id="angle-2" />
-          <div id="alert-angle-1 hidden" class="form-text text-danger">
-            Angle must be greater than 0
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="angle-3" class="form-label">Angle 3 (in degrees)</label>
-          <input type="number" class="form-control" id="angle-3" />
-          <div id="alert-angle-1 hidden" class="form-text text-danger">
+          <div id="alert-angle-2" class="form-text text-danger hidden">
             Angle must be greater than 0
           </div>
         </div>
@@ -50,5 +54,6 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
