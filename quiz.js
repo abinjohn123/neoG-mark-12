@@ -19,6 +19,7 @@ const correctAnswers = {
 function outputScore(score) {
   if (score === 10) outputEl.innerText = 'You scored full marks!!';
   else outputEl.innerText = `Your score is ${score}!`;
+  outputEl.scrollIntoView({ behavior: 'smooth' });
 }
 
 // Event handler
