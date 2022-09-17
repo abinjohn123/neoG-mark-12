@@ -26,442 +26,229 @@
         </ul>
       </nav>
     </header>
-    <div
-      class="container-fluid rounded bg-light p-4 border"
-      style="max-width: 40rem"
-    >
-      <div class="header mb-5 text-center">
+    <div class="container">
+      <div class="container-header mb-5">
         <h1 class="mb-0">Triangles Quiz!</h1>
         <p class="mb-0">
           How well do you know triangles? Test yourself with the quiz!
         </p>
       </div>
-      <form class="mb-4" id="quiz-form">
-        <div class="mb-4">
+      <form class="mb-3" id="quiz-form">
+        <div class="form-row mb-3">
           <p class="mb-1">Sum of all angles in a triangle should be</p>
-          <div class="d-flex justify-content-between">
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-0"
-                id="q-0-op-0"
-                value="a"
-              />
-              <label class="form-check-label" for="q-0-op-0"> &lt; 180° </label>
+          <div class="flex">
+            <div class="form-check">
+              <input type="radio" name="q-0" id="q-0-op-0" value="a" />
+              <label for="q-0-op-0"> &lt; 180° </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-0"
-                id="q-0-op-1"
-                value="b"
-              />
-              <label class="form-check-label" for="q-0-op-1"> = 180° </label>
+            <div class="form-check">
+              <input type="radio" name="q-0" id="q-0-op-1" value="b" />
+              <label for="q-0-op-1"> = 180° </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-0"
-                id="q-0-op-2"
-                value="c"
-              />
-              <label class="form-check-label" for="q-0-op-2"> &gt; 180° </label>
+            <div class="form-check">
+              <input type="radio" name="q-0" id="q-0-op-2" value="c" />
+              <label for="q-0-op-2"> &gt; 180° </label>
             </div>
           </div>
         </div>
 
-        <div class="mb-4">
+        <div class="form-row mb-3">
           <p class="mb-1">Sum of two sides of a triangle should be</p>
-          <div class="d-flex justify-content-between">
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-1"
-                id="q-1-op-0"
-                value="a"
-              />
-              <label class="form-check-label" for="q-1-op-0">
-                &lt; third side
-              </label>
+          <div class="flex">
+            <div class="form-check">
+              <input type="radio" name="q-1" id="q-1-op-0" value="a" />
+              <label for="q-1-op-0"> &lt; third side </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-1"
-                id="q-1-op-1"
-                value="b"
-              />
-              <label class="form-check-label" for="q-1-op-1">
-                = third side
-              </label>
+            <div class="form-check">
+              <input type="radio" name="q-1" id="q-1-op-1" value="b" />
+              <label for="q-1-op-1"> = third side </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-1"
-                id="q-1-op-2"
-                value="c"
-              />
-              <label class="form-check-label" for="q-1-op-2">
-                &gt; third side
-              </label>
+            <div class="form-check">
+              <input type="radio" name="q-1" id="q-1-op-2" value="c" />
+              <label for="q-1-op-2"> &gt; third side </label>
             </div>
           </div>
         </div>
 
-        <div class="mb-4">
+        <div class="form-row mb-3">
           <p class="mb-1">
             What is the third angle for the triangle where angle1 = 45° and
             angle2 = 45°?
           </p>
-          <div class="d-flex justify-content-between">
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-2"
-                id="q-2-op-0"
-                value="a"
-              />
-              <label class="form-check-label" for="q-2-op-0"> 45° </label>
+          <div class="flex">
+            <div class="form-check">
+              <input type="radio" name="q-2" id="q-2-op-0" value="a" />
+              <label for="q-2-op-0"> 45° </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-2"
-                id="q-2-op-1"
-                value="b"
-              />
-              <label class="form-check-label" for="q-2-op-1"> 90° </label>
+            <div class="form-check">
+              <input type="radio" name="q-2" id="q-2-op-1" value="b" />
+              <label for="q-2-op-1"> 90° </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-2"
-                id="q-2-op-2"
-                value="c"
-              />
-              <label class="form-check-label" for="q-2-op-2"> 60° </label>
+            <div class="form-check">
+              <input type="radio" name="q-2" id="q-2-op-2" value="c" />
+              <label for="q-2-op-2"> 60° </label>
             </div>
           </div>
         </div>
 
-        <div class="mb-4">
+        <div class="form-row mb-3">
           <p class="mb-1">
             If a triangle has an angle of 90 degrees, what is it called?
           </p>
-          <div class="d-flex justify-content-between">
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-3"
-                id="q-3-op-0"
-                value="a"
-              />
-              <label class="form-check-label" for="q-3-op-0"> obtuse </label>
+          <div class="flex">
+            <div class="form-check">
+              <input type="radio" name="q-3" id="q-3-op-0" value="a" />
+              <label for="q-3-op-0"> obtuse </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-3"
-                id="q-3-op-1"
-                value="b"
-              />
-              <label class="form-check-label" for="q-3-op-1"> acute </label>
+            <div class="form-check">
+              <input type="radio" name="q-3" id="q-3-op-1" value="b" />
+              <label for="q-3-op-1"> acute </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-3"
-                id="q-3-op-2"
-                value="c"
-              />
-              <label class="form-check-label" for="q-3-op-2">
-                right angled
-              </label>
+            <div class="form-check">
+              <input type="radio" name="q-3" id="q-3-op-2" value="c" />
+              <label for="q-3-op-2"> right angled </label>
             </div>
           </div>
         </div>
 
-        <div class="mb-4">
+        <div class="form-row mb-3">
           <p class="mb-1">What is a triangle with two equal sides called?</p>
-          <div class="d-flex justify-content-between">
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-4"
-                id="q-4-op-0"
-                value="a"
-              />
-              <label class="form-check-label" for="q-4-op-0">
-                equilateral
-              </label>
+          <div class="flex">
+            <div class="form-check">
+              <input type="radio" name="q-4" id="q-4-op-0" value="a" />
+              <label for="q-4-op-0"> equilateral </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-4"
-                id="q-4-op-1"
-                value="b"
-              />
-              <label class="form-check-label" for="q-4-op-1"> acute </label>
+            <div class="form-check">
+              <input type="radio" name="q-4" id="q-4-op-1" value="b" />
+              <label for="q-4-op-1"> acute </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-4"
-                id="q-4-op-2"
-                value="c"
-              />
-              <label class="form-check-label" for="q-4-op-2"> isosceles </label>
+            <div class="form-check">
+              <input type="radio" name="q-4" id="q-4-op-2" value="c" />
+              <label for="q-4-op-2"> isosceles </label>
             </div>
           </div>
         </div>
 
-        <div class="mb-4">
+        <div class="form-row mb-3">
           <p class="mb-1">What is a triangle with three equal sides called?</p>
-          <div class="d-flex justify-content-between">
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-5"
-                id="q-5-op-0"
-                value="a"
-              />
-              <label class="form-check-label" for="q-5-op-0">
-                equilateral
-              </label>
+          <div class="flex">
+            <div class="form-check">
+              <input type="radio" name="q-5" id="q-5-op-0" value="a" />
+              <label for="q-5-op-0"> equilateral </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-5"
-                id="q-5-op-1"
-                value="b"
-              />
-              <label class="form-check-label" for="q-5-op-1"> acute </label>
+            <div class="form-check">
+              <input type="radio" name="q-5" id="q-5-op-1" value="b" />
+              <label for="q-5-op-1"> acute </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-5"
-                id="q-5-op-2"
-                value="c"
-              />
-              <label class="form-check-label" for="q-5-op-2"> isosceles </label>
+            <div class="form-check">
+              <input type="radio" name="q-5" id="q-5-op-2" value="c" />
+              <label for="q-5-op-2"> isosceles </label>
             </div>
           </div>
         </div>
 
-        <div class="mb-4">
+        <div class="form-row mb-3">
           <p class="mb-1">Side opposite to a right angle is called</p>
-          <div class="d-flex justify-content-between">
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-6"
-                id="q-6-op-0"
-                value="a"
-              />
-              <label class="form-check-label" for="q-6-op-0"> height </label>
+          <div class="flex">
+            <div class="form-check">
+              <input type="radio" name="q-6" id="q-6-op-0" value="a" />
+              <label for="q-6-op-0"> height </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-6"
-                id="q-6-op-1"
-                value="b"
-              />
-              <label class="form-check-label" for="q-6-op-1">
-                hypotenuse
-              </label>
+            <div class="form-check">
+              <input type="radio" name="q-6" id="q-6-op-1" value="b" />
+              <label for="q-6-op-1"> hypotenuse </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-6"
-                id="q-6-op-2"
-                value="c"
-              />
-              <label class="form-check-label" for="q-6-op-2"> base </label>
+            <div class="form-check">
+              <input type="radio" name="q-6" id="q-6-op-2" value="c" />
+              <label for="q-6-op-2"> base </label>
             </div>
           </div>
         </div>
 
-        <div class="mb-4">
+        <div class="form-row mb-3">
           <p class="mb-1">In an equilateral triangle, all angles are equal</p>
-          <div class="d-flex justify-content-between">
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-7"
-                id="q-7-op-0"
-                value="a"
-              />
-              <label class="form-check-label" for="q-7-op-0"> true </label>
+          <div class="flex">
+            <div class="form-check">
+              <input type="radio" name="q-7" id="q-7-op-0" value="a" />
+              <label for="q-7-op-0"> true </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-7"
-                id="q-7-op-1"
-                value="b"
-              />
-              <label class="form-check-label" for="q-7-op-1">
-                depends on length
-              </label>
+            <div class="form-check">
+              <input type="radio" name="q-7" id="q-7-op-1" value="b" />
+              <label for="q-7-op-1"> depends on length </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-7"
-                id="q-7-op-2"
-                value="c"
-              />
-              <label class="form-check-label" for="q-7-op-2"> false </label>
+            <div class="form-check">
+              <input type="radio" name="q-7" id="q-7-op-2" value="c" />
+              <label for="q-7-op-2"> false </label>
             </div>
           </div>
         </div>
 
-        <div class="mb-4">
+        <div class="form-row mb-3">
           <p class="mb-1">
             What's the length of the hypotenuse for a right triangle of sides 3
             and 4
           </p>
-          <div class="d-flex justify-content-between">
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-8"
-                id="q-8-op-0"
-                value="a"
-              />
-              <label class="form-check-label" for="q-8-op-0"> 5 </label>
+          <div class="flex">
+            <div class="form-check">
+              <input type="radio" name="q-8" id="q-8-op-0" value="a" />
+              <label for="q-8-op-0"> 5 </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-8"
-                id="q-8-op-1"
-                value="b"
-              />
-              <label class="form-check-label" for="q-8-op-1"> 2.5 </label>
+            <div class="form-check">
+              <input type="radio" name="q-8" id="q-8-op-1" value="b" />
+              <label for="q-8-op-1"> 2.5 </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-8"
-                id="q-8-op-2"
-                value="c"
-              />
-              <label class="form-check-label" for="q-8-op-2"> 25 </label>
+            <div class="form-check">
+              <input type="radio" name="q-8" id="q-8-op-2" value="c" />
+              <label for="q-8-op-2"> 25 </label>
             </div>
           </div>
         </div>
 
-        <div class="mb-4">
+        <div class="form-row mb-3">
           <p class="mb-1">A scalene triangle has</p>
-          <div class="d-flex justify-content-between">
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-9"
-                id="q-9-op-0"
-                value="a"
-              />
-              <label class="form-check-label" for="q-9-op-0">
-                no equal sides
-              </label>
+          <div class="flex">
+            <div class="form-check">
+              <input type="radio" name="q-9" id="q-9-op-0" value="a" />
+              <label for="q-9-op-0"> no equal sides </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-9"
-                id="q-9-op-1"
-                value="b"
-              />
-              <label class="form-check-label" for="q-9-op-1">
-                two equal sides
-              </label>
+            <div class="form-check">
+              <input type="radio" name="q-9" id="q-9-op-1" value="b" />
+              <label for="q-9-op-1"> two equal sides </label>
             </div>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="q-9"
-                id="q-9-op-2"
-                value="c"
-              />
-              <label class="form-check-label" for="q-9-op-2">
-                same base and height
-              </label>
+            <div class="form-check">
+              <input type="radio" name="q-9" id="q-9-op-2" value="c" />
+              <label for="q-9-op-2"> same base and height </label>
             </div>
           </div>
         </div>
-        <div class="text-center">
+        <div class="btn-container">
           <button type="submit" class="btn btn-primary px-4 py-2">
             Submit
           </button>
         </div>
       </form>
-      <h2 class="p-3 text-center rounded border" id="output"></h2>
-      <small class="text-secondary text-center d-block"
-        >dabbling with bootstrap for the first time :)</small
-      >
+      <h2 class="p-3" id="output"></h2>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
     <script src="quiz.js"></script>
   </body>
 </html>
