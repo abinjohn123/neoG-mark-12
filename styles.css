@@ -3,7 +3,11 @@
 :root {
   --dark-grey: #111827;
   --bg: #f8f9fa;
+  --text: #0f172a;
+  --grey: #d4d4d4;
   --primary: #3b82f6;
+  --primary-dark: #2f68c5;
+  --text-error: #b91c1c;
 }
 
 * {
@@ -22,7 +26,7 @@ html {
 }
 
 .p-4 {
-  padding: 4rem;
+  padding: 3rem;
 }
 
 .mb-0 {
@@ -41,6 +45,7 @@ body {
   background-color: var(--dark-grey);
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
+  color: var(--text);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,11 +77,12 @@ body {
   font-weight: 600;
 }
 
+/* CONTAINER STYLES */
+
 .container {
   background-color: var(--bg);
   border-radius: 5px;
-  padding: 4rem;
-  max-width: 30rem;
+  padding: 3rem;
 }
 
 .container-header {
@@ -85,20 +91,68 @@ body {
 
 .container-header h1 {
   font-family: 'Bebas Neue', cursive;
-  font-size: 4rem;
+  font-size: 5.2rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 1rem;
+}
+.form-control {
+  border: 1px solid var(--grey);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.form-control:focus {
+  outline-color: var(--primary-dark);
+}
+
+.form-control.border-danger {
+  border-color: var(--text-error);
+}
+.form-text {
+  font-size: 1.3rem;
+  margin-top: 0.4rem;
+  color: var(--text-error);
 }
 
 .hidden {
   display: none;
 }
 
+.btn-container {
+  text-align: center;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--primary);
+  color: var(--bg);
+  align-self: center;
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+.btn:hover {
+  background-color: var(--primary-dark);
+}
+
 #output,
 #formula-dislay {
   background-color: #fff;
-  min-height: 4rem;
+  min-height: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--grey);
+  border-radius: 5px;
 }
 
 #formula-dislay {
