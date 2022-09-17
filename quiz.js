@@ -24,6 +24,7 @@ function outputScore(score) {
 // Event handler
 function calcScore(e) {
   e.preventDefault();
+  outputEl.innerText = '';
   let score = 0;
   const formData = new FormData(form);
   for (const [qus, ans] of formData.entries()) {

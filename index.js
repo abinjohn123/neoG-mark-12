@@ -6,23 +6,17 @@ const angleInput2 = document.getElementById('angle-2');
 const form = document.getElementById('triangle-form');
 const outputEl = document.getElementById('output');
 
-const dangerBorderClassList = ['border', 'border-2', 'border-danger'];
-
 function inputsValid(...angles) {
   let validator = true;
   angles.forEach((angle, i) => {
     if (angle <= 0) {
       document.querySelector(`#alert-angle-${i}`).classList.remove('hidden');
-      document
-        .querySelector(`#angle-${i}`)
-        .classList.add(...dangerBorderClassList);
+      document.querySelector(`#angle-${i}`).classList.add('border-danger');
 
       validator = false;
     } else {
       document.querySelector(`#alert-angle-${i}`).classList.add('hidden');
-      document
-        .querySelector(`#angle-${i}`)
-        .classList.remove(...dangerBorderClassList);
+      document.querySelector(`#angle-${i}`).classList.remove('border-danger');
     }
   });
 
@@ -36,6 +30,8 @@ function isTriangle(...angles) {
 // Event Handlers
 function formSubmitHandler(e) {
   e.preventDefault();
+  outputEl.innerText = '';
+
   const angle0 = Number.parseInt(angleInput0.value);
   const angle1 = Number.parseInt(angleInput1.value);
   const angle2 = Number.parseInt(angleInput2.value);
