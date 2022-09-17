@@ -21,7 +21,7 @@ html {
   font-size: 10px;
 }
 
-/* HELPER CLASSES */
+/* HELPER CLASSES FOR MARGIN AND PADDING*/
 .p-2 {
   padding: 2rem;
 }
@@ -66,6 +66,7 @@ body {
   padding-bottom: 2rem;
 }
 
+/* NAV */
 .nav-header {
   background-color: var(--primary);
   align-self: stretch;
@@ -91,8 +92,7 @@ body {
   font-weight: 600;
 }
 
-/* CONTAINER STYLES */
-
+/* CONTAINER */
 .container {
   background-color: var(--bg);
   border-radius: 5px;
