@@ -1,24 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap');
 
 :root {
-  --bg: #fff;
-  --dark: #212529;
+  --dark-grey: #111827;
+  --bg: #f8f9fa;
+  --primary: #3b82f6;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+/* HELPER CLASSES */
+.p-2 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.mb-0 {
+  margin-bottom: 0rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+/* MAIN STYLES */
 body {
+  background-color: var(--dark-grey);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 
-.header h1 {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 4rem;
+.nav-header {
+  background-color: var(--primary);
+  align-self: stretch;
+  font-size: 1.6rem;
+}
+
+.nav-header-list {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link,
+.nav-link:visited {
+  text-decoration: none;
+  color: #fff;
 }
 
 .active {
-  color: var(--dark) !important;
+  color: var(--dark-grey) !important;
   font-weight: 600;
+}
+
+.container {
+  background-color: var(--bg);
+  border-radius: 5px;
+  padding: 4rem;
+  max-width: 30rem;
+}
+
+.container-header {
+  text-align: center;
+}
+
+.container-header h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4rem;
 }
 
 .hidden {
